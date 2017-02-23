@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="zh-cn" ng-app='jiaxinrenli'>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+    <title>山西佳鑫人力资源管理服务有限公司</title>
+	<!-- bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="../css/index.css" rel="stylesheet">
+    <script src="../js/jquery-1.10.2.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/angular.min.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+
+<body ng-controller='myCtrl'>
+
+  <!-- nav导航 -->
+  <nav class="navbar site-navbar navbar-fixed-top navbar-default" role="navigation">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand ml-10" href="#"><img class="logo" src="../img/index/top_logo.png" alt=""></a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right mr-5 navList">
+          <li><a href="#">首页</a></li>
+          <li><a href="#">关于</a></li>
+          <li><a href="#">新闻</a></li>
+          <li><a href="#">服务</a></li>
+          <li><a href="#">招聘</a></li>
+          <li><a href="#">联系</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <!-- nav导航结束 -->
+  <!-- 子页banner -->
+  <div class="bannerChild">
+    <div class="container bannerBg">
+      <div class="search">
+        <a href="Javascript">加入收藏</a>|<a href="index.html">网站首页</a>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h3>产品服务</h3>
+          <p style="color:#8cbbcd; font-size: 1.5em">PRODUCE SERVICE</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 子页banner end-->
+  <!-- 子页nav -->
+    <div class="zyNav">
+      <div class="container colorDiv">
+        <div class="secondNav">
+          <span ng-click="t=1" ng-class="{true:'focus',false:''}[t==1]"><a href="Javascript:;">企业服务</a></span>
+          <span ng-click="t=2" ng-class="{true:'focus',false:''}[t==2]"><a href="Javascript:;">员工服务</a></span>
+        </div>
+      </div>
+    </div>
+  <!-- 子页nav end-->
+  <!-- content -->
+  <div ng-show="t==1">
+    <div class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-xs-12 rightDiv">
+            <img src="../img/index/paiqian.png" class="img-responsive">
+          </div>
+          <div class="col-md-8 col-xs-12">
+            <h3><strong></strong>派遣服务</h3>
+            <div class="hidDiv">
+              <p>
+                派遣服务  由派遣单位与用人单位签订合作协议，将与其签订劳动合同的劳动者派遣到用人单位提供劳动。简化管理程序，降低成本费用，规范用工行为，减少劳动争议。服务内容 1、员工入职服务。 2、员工在职服务。 3、员工离职服务。 服务流程 1、商谈服务内容 2、签订派遣协议 3、…
+              </p>
+              <div><a href="Javascript:;" class="detail">查看详情</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-xs-12 leftDiv">
+            <img src="../img/index/waibao.png" class="img-responsive">
+          </div>
+          <div class="col-md-8 col-xs-12">
+            <h3><strong></strong>外包服务</h3>
+            <div class="hidDiv">
+              <p>
+                派遣服务  由派遣单位与用人单位签订合作协议，将与其签订劳动合同的劳动者派遣到用人单位提供劳动。简化管理程序，降低成本费用，规范用工行为，减少劳动争议。服务内容 1、员工入职服务。 2、员工在职服务。 3、员工离职服务。 服务流程 1、商谈服务内容 2、签订派遣协议 3、…
+              </p>
+              <div><a href="Javascript:;" class="detail">查看详情</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-xs-12 rightDiv">
+            <img src="../img/index/zhaopin.png" class="img-responsive">
+          </div>
+          <div class="col-md-8 col-xs-12">
+            <h3><strong></strong>招聘服务</h3>
+            <div class="hidDiv">
+              <p>
+                派遣服务  由派遣单位与用人单位签订合作协议，将与其签订劳动合同的劳动者派遣到用人单位提供劳动。简化管理程序，降低成本费用，规范用工行为，减少劳动争议。服务内容 1、员工入职服务。 2、员工在职服务。 3、员工离职服务。 服务流程 1、商谈服务内容 2、签订派遣协议 3、…
+              </p>
+              <div><a href="Javascript:;" class="detail">查看详情</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-xs-12 leftDiv">
+            <img src="../img/index/tuoguan.png" class="img-responsive">
+          </div>
+          <div class="col-md-8 col-xs-12">
+            <h3><strong></strong>托管服务</h3>
+            <div class="hidDiv">
+              <p>
+                派遣服务  由派遣单位与用人单位签订合作协议，将与其签订劳动合同的劳动者派遣到用人单位提供劳动。简化管理程序，降低成本费用，规范用工行为，减少劳动争议。服务内容 1、员工入职服务。 2、员工在职服务。 3、员工离职服务。 服务流程 1、商谈服务内容 2、签订派遣协议 3、…
+              </p>
+              <div><a href="Javascript:;" class="detail">查看详情</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-xs-12 rightDiv">
+            <img src="../img/index/rencai.png" class="img-responsive">
+          </div>
+          <div class="col-md-8 col-xs-12">
+            <h3><strong></strong>人才测评</h3>
+            <div class="hidDiv">
+              <p>
+                派遣服务  由派遣单位与用人单位签订合作协议，将与其签订劳动合同的劳动者派遣到用人单位提供劳动。简化管理程序，降低成本费用，规范用工行为，减少劳动争议。服务内容 1、员工入职服务。 2、员工在职服务。 3、员工离职服务。 服务流程 1、商谈服务内容 2、签订派遣协议 3、…
+              </p>
+              <div><a href="Javascript:;" class="detail">查看详情</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-xs-12 leftDiv">
+            <img src="../img/index/zixun.png" class="img-responsive">
+          </div>
+          <div class="col-md-8 col-xs-12">
+            <h3><strong></strong>咨询服务</h3>
+            <div class="hidDiv">
+              <p>
+                派遣服务  由派遣单位与用人单位签订合作协议，将与其签订劳动合同的劳动者派遣到用人单位提供劳动。简化管理程序，降低成本费用，规范用工行为，减少劳动争议。服务内容 1、员工入职服务。 2、员工在职服务。 3、员工离职服务。 服务流程 1、商谈服务内容 2、签订派遣协议 3、…
+              </p>
+              <div><a href="Javascript:;" class="detail">查看详情</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div ng-show="t==2">
+    <div class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-xs-12 rightDiv">
+            <img src="../img/index/yanglao.png" class="img-responsive">
+          </div>
+          <div class="col-md-8 col-xs-12">
+            <h3><strong></strong>养老保险</h3>
+            <div class="hidDiv">
+              <p>
+                派遣服务  由派遣单位与用人单位签订合作协议，将与其签订劳动合同的劳动者派遣到用人单位提供劳动。简化管理程序，降低成本费用，规范用工行为，减少劳动争议。服务内容 1、员工入职服务。 2、员工在职服务。 3、员工离职服务。 服务流程 1、商谈服务内容 2、签订派遣协议 3、…
+              </p>
+              <div><a href="Javascript:;" class="detail">查看详情</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-xs-12 leftDiv">
+            <img src="../img/index/yiliao.png" class="img-responsive">
+          </div>
+          <div class="col-md-8 col-xs-12">
+            <h3><strong></strong>医疗保险</h3>
+            <div class="hidDiv">
+              <p>
+                派遣服务  由派遣单位与用人单位签订合作协议，将与其签订劳动合同的劳动者派遣到用人单位提供劳动。简化管理程序，降低成本费用，规范用工行为，减少劳动争议。服务内容 1、员工入职服务。 2、员工在职服务。 3、员工离职服务。 服务流程 1、商谈服务内容 2、签订派遣协议 3、…
+              </p>
+              <div><a href="Javascript:;" class="detail">查看详情</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-xs-12 rightDiv">
+            <img src="../img/index/shiye.png" class="img-responsive">
+          </div>
+          <div class="col-md-8 col-xs-12">
+            <h3><strong></strong>失业保险</h3>
+            <div class="hidDiv">
+              <p>
+                派遣服务  由派遣单位与用人单位签订合作协议，将与其签订劳动合同的劳动者派遣到用人单位提供劳动。简化管理程序，降低成本费用，规范用工行为，减少劳动争议。服务内容 1、员工入职服务。 2、员工在职服务。 3、员工离职服务。 服务流程 1、商谈服务内容 2、签订派遣协议 3、…
+              </p>
+              <div><a href="Javascript:;" class="detail">查看详情</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-xs-12 leftDiv">
+            <img src="../img/index/shengyu.png" class="img-responsive">
+          </div>
+          <div class="col-md-8 col-xs-12">
+            <h3><strong></strong>生育保险</h3>
+            <div class="hidDiv">
+              <p>
+                派遣服务  由派遣单位与用人单位签订合作协议，将与其签订劳动合同的劳动者派遣到用人单位提供劳动。简化管理程序，降低成本费用，规范用工行为，减少劳动争议。服务内容 1、员工入职服务。 2、员工在职服务。 3、员工离职服务。 服务流程 1、商谈服务内容 2、签订派遣协议 3、…
+              </p>
+              <div><a href="Javascript:;" class="detail">查看详情</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-xs-12 rightDiv">
+            <img src="../img/index/gongshang.png" class="img-responsive">
+          </div>
+          <div class="col-md-8 col-xs-12">
+            <h3><strong></strong>工伤保险</h3>
+            <div class="hidDiv">
+              <p>
+                派遣服务  由派遣单位与用人单位签订合作协议，将与其签订劳动合同的劳动者派遣到用人单位提供劳动。简化管理程序，降低成本费用，规范用工行为，减少劳动争议。服务内容 1、员工入职服务。 2、员工在职服务。 3、员工离职服务。 服务流程 1、商谈服务内容 2、签订派遣协议 3、…
+              </p>
+              <div><a href="Javascript:;" class="detail">查看详情</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-xs-12 leftDiv">
+            <img src="../img/index/gongjijin.png" class="img-responsive">
+          </div>
+          <div class="col-md-8 col-xs-12">
+            <h3><strong></strong>公积金服务</h3>
+            <div class="hidDiv">
+              <p>
+                派遣服务  由派遣单位与用人单位签订合作协议，将与其签订劳动合同的劳动者派遣到用人单位提供劳动。简化管理程序，降低成本费用，规范用工行为，减少劳动争议。服务内容 1、员工入职服务。 2、员工在职服务。 3、员工离职服务。 服务流程 1、商谈服务内容 2、签订派遣协议 3、…
+              </p>
+              <div><a href="Javascript:;" class="detail">查看详情</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- content end-->
+    <!-- footer start -->
+   <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-md-offset-7"><a href="Javascript:;">网站首页</a>/<a href="Javascript:;">关于佳鑫</a>/<a href="Javascript:;">新闻资讯</a>/<a href="Javascript:;">产品服务</a>/<a href="Javascript:;">招聘中心</a>/<a href="Javascript:;">联系我们</a></div>
+      </div>
+      <div class="row" style="padding: 2% 0;">
+        <div class="col-md-6 col-xs-12 flogo">
+          <img src="../img/index/flogo.jpg" alt="">
+        </div>
+        <div class="col-md-6 col-xs-12" style="padding-top: 1%; text-align: right;">
+          <p>地址：太原市高新开发区创业街时代广场1408</p>
+          <p>电话：0351-8066903</p>
+          <a href="Javascript:;" class="icp">
+            <img src="../img/index/ghs.png" alt="">
+            <p>晋公网安备 14010502050227号</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer end-->
+
+  <!-- 侧边栏 -->
+  <div class="besideDiv">
+    <a href="Javascript:;">
+      <span class="glyphicon glyphicon-user fontspan"></span>
+      <span>保险咨询</span>
+    </a>
+    <a href="Javascript:;">
+      <span class="glyphicon glyphicon-user fontspan"></span>
+      <span>档案咨询</span>
+    </a>
+    <a href="Javascript:;">
+      <span class="glyphicon glyphicon-user fontspan"></span>
+      <span>公积金咨询</span>
+    </a>
+    <a href="Javascript:;">
+      <span class="glyphicon glyphicon-user fontspan"></span>
+      <span>业务咨询</span>
+    </a>
+    <a href="Javascript:;" ng-mouseover='e=1' ng-mouseout='e=0'>
+      <span class="glyphicon glyphicon-qrcode fontspan"></span>
+      <span>扫一扫关注</span>
+    </a>
+    <a href="Javascript:;" onclick='gotoTop();return false;'>
+      <span class="glyphicon glyphicon-arrow-up fontspan"></span>
+      <span>返回顶部</span>
+    </a>
+    <div ng-show='e==1' ng-hide='e==0' class="ewm">
+      <img src="../img/index/ewm.png" alt="">
+    </div>
+  </div>
+  <!-- 侧边栏 end -->
+  <script type="text/javascript">
+    window.onload = function(){
+      var wid = document.documentElement.clientWidth;
+      var newfs = wid*16/640;
+      console.log(newfs);
+      var html = document.getElementsByTagName('html')[0];
+      html.style.fontSize = newfs+'px';
+    }
+    window.onresize = function(){
+      var wid = document.documentElement.clientWidth;
+      var newfs = wid*16/640;
+      console.log(newfs);
+      var html = document.getElementsByTagName('html')[0];
+      html.style.fontSize = newfs+'px';
+    }
+  </script>
+
+  <script type="text/javascript">
+    var app = angular.module('jiaxinrenli',[]);
+    app.controller('myCtrl',['$scope',function($s){
+      $s.t=1;
+      $s.e=0;
+    }])  
+  </script>
+
+  <script type="text/javascript">   
+    function gotoTop(acceleration,stime) {
+     acceleration = acceleration || 0.1;
+     stime = stime || 10;
+     var x1 = 0;
+     var y1 = 0;
+     var x2 = 0;
+     var y2 = 0;
+     var x3 = 0;
+     var y3 = 0; 
+     if (document.documentElement) {
+         x1 = document.documentElement.scrollLeft || 0;
+         y1 = document.documentElement.scrollTop || 0;
+     }
+     if (document.body) {
+         x2 = document.body.scrollLeft || 0;
+         y2 = document.body.scrollTop || 0;
+     }
+     var x3 = window.scrollX || 0;
+     var y3 = window.scrollY || 0;
+   
+     // 滚动条到页面顶部的水平距离，指横向滚动条
+     var x = Math.max(x1, Math.max(x2, x3));
+     // console.log(x);
+     // 滚动条到页面顶部的垂直距离，指纵向滚动条
+     var y = Math.max(y1, Math.max(y2, y3));
+     // console.log(y);
+     // 滚动距离 = 目前距离 / 速度, 因为距离原来越小, 速度是大于 1 的数, 所以滚动距离会越来越小
+     var speeding = 1 + acceleration;
+     window.scrollTo(Math.floor(x / speeding), Math.floor(y / speeding));
+   
+     // 如果距离不为零, 继续调用函数
+     if(x > 0 || y > 0) {
+        var run = "gotoTop(" + acceleration + ", " + stime + ")";
+        window.setTimeout(run, stime);
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-cn" ng-app='jiaxinrenli'>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+    <title>山西佳鑫人力资源管理服务有限公司</title>
+	<!-- bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="../css/index.css" rel="stylesheet">
+    <script src="../js/jquery-1.10.2.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/angular.min.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+
+<body ng-controller='myCtrl'>
+
+  <!-- nav导航 -->
+  <nav class="navbar site-navbar navbar-fixed-top navbar-default" role="navigation">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand ml-10" href="#"><img class="logo" src="../img/index/top_logo.png" alt=""></a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right mr-5 navList">
+          <li><a href="#">首页</a></li>
+          <li><a href="#">关于</a></li>
+          <li><a href="#">新闻</a></li>
+          <li><a href="#">服务</a></li>
+          <li><a href="#">招聘</a></li>
+          <li><a href="#">联系</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <!-- nav导航结束 -->
+  <!-- 子页banner -->
+  <div class="bannerChild">
+    <div class="container bannerBg">
+      <div class="search">
+        <a href="Javascript">加入收藏</a>|<a href="index.html">网站首页</a>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h3>关于佳鑫</h3>
+          <p style="color:#8cbbcd; font-size: 1.5em">ABOUT JIA XIN</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 子页banner end-->
+  <!-- 子页nav -->
+    <div class="zyNav">
+      <div class="container colorDiv">
+        <div class="secondNav">
+          <span ng-click="t=1" ng-class="{true:'focus',false:''}[t==1]"><a href="Javascript:;">公司简介</a></span>
+          <span ng-click="t=2" ng-class="{true:'focus',false:''}[t==2]"><a href="Javascript:;">企业文化</a></span>
+          <span ng-click="t=3" ng-class="{true:'focus',false:''}[t==3]"><a href="Javascript:;">管理团队</a></span>
+        </div>
+      </div>
+    </div>
+  <!-- 子页nav end-->
+  <!-- content -->
+    <div ng-show="t==1">
+      <div class="zyNews article">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 style="text-align: center;">关于佳鑫</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <p style="text-indent: 2em;">
+                <span style="line-height: 2;color:#666;font-size: 16px;">&nbsp;山西佳鑫人力资源管理咨询服务有限公司成立于2006年,</span>
+                <span style="line-height: 2;text-indent: 2em;color:#666;font-size: 16px;">是经山西省人力资源和社会保障厅批准的专业人力资源服务机构，拥有覆盖全省的人力资源寻访及客户服务网络。</span>
+                <span style="line-height: 2;text-indent: 2em;color:#666;font-size: 16px;">公司作为人力资源管理综合服务商和人才服务解决方案提供商，竭诚为客户提供各种人力资源综合管理服务。</span>
+              </p>
+              <p style="text-indent: 2em;">
+                <span style="line-height:2;color:#666;font-size: 16px;">
+                   &nbsp;十年来依托人才、人事与劳动保障系统等有关部门的业务支持，在全省邮政、邮储银行、物流、水利、电力等诸多领域，成功为数十家国有大型单位、数十万人次以上的劳动者提供了派遣服务、外包服务、招聘服务、代缴保险、档案管理、退休托管、人才测评、人事政策咨询、劳务法律顾问、劳动争议纠纷处理咨询等全方位的服务。
+                </span>
+              </p>
+              <p style="text-indent: 2em;">
+                <span style="line-height:2;color:#666;font-size: 16px;">
+                   &nbsp; 公司秉承“以人为本、客户至上、品质服务、追求卓越”的宗旨，本着“诚信、守法、专业、共赢”的理念，竭诚为企业和员工提供高品质人力资源管理咨询服务，尽力维护企业和员工的合法权益，以务实的工作态度和优良的服务，以专业、规范的操作和诚信高品质的服务与客户建立了紧密合作，协助客户专业有效地处理各种人事管理事务和协调各方关系，为服务单位与员工提供了一个既高效又安全方便的服务平台，从而赢得了政府部门与服务单位、劳动者的一致赞誉，成为企业和员工可信赖的合作伙伴。
+                </span>
+              </p>
+              <p style="text-indent: 2em;"><span></span></p>
+              <p style="text-indent: 2em;">
+                <span>
+                  <span style="line-height:2;color:#666;font-size: 16px;">
+                    &nbsp; 公司将以不懈的追求和持续的创新精神，不断帮助客户适应时代发展变革，提升人力资本管理效能，为客户发展注入永续的生命力。
+                  </span>
+                   <span style="line-height:2;color:#666;font-size: 16px;">&nbsp;</span>
+                </span>
+              </p>
+              <p><span style="line-height: 2;"><img style="width: 100%;" src="../img/index/aboutjiaxin-img.jpg" alt=""><br/></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div ng-show="t==2">
+      <div class="zyNews article">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 style="text-align: center;">佳鑫文化</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <p style="text-indent: 2em;">
+                <span style="line-height: 2;color:#666;font-size: 16px;">企业愿景：成为中国人力资源服务行业的领导者。</span>
+              </p>
+              <p style="text-indent: 2em;">
+                <span style="line-height:2;color:#666;font-size: 16px;">企业使命：打造人才成为品牌，成为人才与企业、社会的枢纽。</span>
+              </p>
+              <p style="text-indent: 2em;">
+                <span style="line-height:2;color:#666;font-size: 16px;">
+                   核心价值：诚信、守法、专业、共赢。
+                </span>
+              </p>
+              <p style="text-indent: 2em;">
+                   <span style="line-height:2;color:#666;font-size: 16px;">企业精神：以人为本、客户至上、品质服务、追求卓越！</span>
+                   <img src="../img/index/jiaxin-culture.jpg" alt="佳鑫文化" style="text-align: center; text-indent: 2em; line-height: 2; width: 100%;">
+              </p>
+              <p><br/></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div ng-show="t==3">
+      <div class="zyNews article">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 style="text-align: center;">管理团队</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <p style="text-indent: 2em;">
+                <span style="line-height: 2;color:#666;font-size: 16px;">佳鑫是一支理念先进、管理规范、服务到位的专业团队，拥有多名人力资源资深顾问、劳务法律高级顾问，凭借丰富的行业经验，秉承“诚信、守法、专业、共赢”的团队精神和企业信念，与您一起共同发展！</span>
+              </p>
+              <p style="text-indent: 2em;">
+                <span style="color:#333;font-size: 14px;">
+                  <img src="../img/index/team-manage.jpg" alt="管理团队" style="width: 100%;">
+                  <br/>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- content end-->
+    <!-- footer start -->
+   <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-md-offset-7"><a href="Javascript:;">网站首页</a>/<a href="Javascript:;">关于佳鑫</a>/<a href="Javascript:;">新闻资讯</a>/<a href="Javascript:;">产品服务</a>/<a href="Javascript:;">招聘中心</a>/<a href="Javascript:;">联系我们</a></div>
+      </div>
+      <div class="row" style="padding: 2% 0;">
+        <div class="col-md-6 col-xs-12 flogo">
+          <img src="../img/index/flogo.jpg" alt="">
+        </div>
+        <div class="col-md-6 col-xs-12" style="padding-top: 1%; text-align: right;">
+          <p>地址：太原市高新开发区创业街时代广场1408</p>
+          <p>电话：0351-8066903</p>
+          <a href="Javascript:;" class="icp">
+            <img src="../img/index/ghs.png" alt="">
+            <p>晋公网安备 14010502050227号</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer end-->
+
+  <!-- 侧边栏 -->
+  <div class="besideDiv">
+    <a href="Javascript:;">
+      <span class="glyphicon glyphicon-user fontspan"></span>
+      <span>保险咨询</span>
+    </a>
+    <a href="Javascript:;">
+      <span class="glyphicon glyphicon-user fontspan"></span>
+      <span>档案咨询</span>
+    </a>
+    <a href="Javascript:;">
+      <span class="glyphicon glyphicon-user fontspan"></span>
+      <span>公积金咨询</span>
+    </a>
+    <a href="Javascript:;">
+      <span class="glyphicon glyphicon-user fontspan"></span>
+      <span>业务咨询</span>
+    </a>
+    <a href="Javascript:;" ng-mouseover='e=1' ng-mouseout='e=0'>
+      <span class="glyphicon glyphicon-qrcode fontspan"></span>
+      <span>扫一扫关注</span>
+    </a>
+    <a href="Javascript:;" onclick='gotoTop();return false;'>
+      <span class="glyphicon glyphicon-arrow-up fontspan"></span>
+      <span>返回顶部</span>
+    </a>
+    <div ng-show='e==1' ng-hide='e==0' class="ewm">
+      <img src="../img/index/ewm.png" alt="">
+    </div>
+  </div>
+  <!-- 侧边栏 end -->
+  <script type="text/javascript">
+    window.onload = function(){
+      var wid = document.documentElement.clientWidth;
+      var newfs = wid*16/640;
+      console.log(newfs);
+      var html = document.getElementsByTagName('html')[0];
+      html.style.fontSize = newfs+'px';
+    }
+    window.onresize = function(){
+      var wid = document.documentElement.clientWidth;
+      var newfs = wid*16/640;
+      console.log(newfs);
+      var html = document.getElementsByTagName('html')[0];
+      html.style.fontSize = newfs+'px';
+    }
+  </script>
+
+  <script type="text/javascript">
+    var app = angular.module('jiaxinrenli',[]);
+    app.controller('myCtrl',['$scope',function($s){
+      $s.t=1;
+      $s.e=0;
+    }])  
+  </script>
+
+  <script type="text/javascript">   
+    function gotoTop(acceleration,stime) {
+     acceleration = acceleration || 0.1;
+     stime = stime || 10;
+     var x1 = 0;
+     var y1 = 0;
+     var x2 = 0;
+     var y2 = 0;
+     var x3 = 0;
+     var y3 = 0; 
+     if (document.documentElement) {
+         x1 = document.documentElement.scrollLeft || 0;
+         y1 = document.documentElement.scrollTop || 0;
+     }
+     if (document.body) {
+         x2 = document.body.scrollLeft || 0;
+         y2 = document.body.scrollTop || 0;
+     }
+     var x3 = window.scrollX || 0;
+     var y3 = window.scrollY || 0;
+   
+     // 滚动条到页面顶部的水平距离，指横向滚动条
+     var x = Math.max(x1, Math.max(x2, x3));
+     // console.log(x);
+     // 滚动条到页面顶部的垂直距离，指纵向滚动条
+     var y = Math.max(y1, Math.max(y2, y3));
+     // console.log(y);
+     // 滚动距离 = 目前距离 / 速度, 因为距离原来越小, 速度是大于 1 的数, 所以滚动距离会越来越小
+     var speeding = 1 + acceleration;
+     window.scrollTo(Math.floor(x / speeding), Math.floor(y / speeding));
+   
+     // 如果距离不为零, 继续调用函数
+     if(x > 0 || y > 0) {
+        var run = "gotoTop(" + acceleration + ", " + stime + ")";
+        window.setTimeout(run, stime);
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="zh-cn" ng-app='jiaxinrenli'>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+    <title>山西佳鑫人力资源管理服务有限公司</title>
+	<!-- bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="../css/index.css" rel="stylesheet">
+    <script src="../js/jquery-1.10.2.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/angular.min.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+
+<body ng-controller='myCtrl'>
+
+  <!-- nav导航 -->
+<nav class="navbar site-navbar navbar-fixed-top navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand ml-10" href="#"><img class="logo" src="../img/index/top_logo.png" alt=""></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right mr-5 navList">
+        <li><a href="#">首页</a></li>
+        <li><a href="#">关于</a></li>
+        <li><a href="#">新闻</a></li>
+        <li><a href="#">服务</a></li>
+        <li><a href="#">招聘</a></li>
+        <li><a href="#">联系</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+  <!-- nav导航结束 -->
+
+
+  <!-- banner start -->
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="../img/index/banner1.jpg" alt="">
+    </div>
+    <div class="item">
+      <img src="../img/index/banner2.jpg" alt="">
+    </div>
+    <div class="item">
+      <img src="../img/index/banner3.jpg" alt="">
+    </div>
+  </div>
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden='true'></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden='true'></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+  <!-- banner end -->
+
+
+  <!-- serve bar -->
+  <div class="serve">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <a href="#">
+            <img src="../img/index/serve_bar.jpg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- serve bar end -->
+
+  <!-- section one -->
+  <div class="menuList">
+    <div class="row">
+      <div class="col-lg-12">
+        <div>
+          <span ng-click='t=1' ng-touch='t=1' ng-class="{true:'focus',false:''}[t==1]">企业服务</span>
+          <span ng-click='t=2' ng-touch='t=2' ng-class="{true:'focus',false:''}[t==2]">员工服务</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div ng-show='t==1'>
+    <div class="container">
+      <div class="tabDiv">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="tabConDiv">
+              <h3>劳务派遣</h3>
+              <p>派遣服务  由派遣单位与用人单位签订合作协议，将与其签订劳动合同的劳动者派…</p>
+              <a href="#">立即了解</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="tabConDiv">
+              <h3>劳务外包</h3>
+              <p>派遣服务  由派遣单位与用人单位签订合作协议，将与其签订劳动合同的劳动者派…</p>
+              <a href="#">立即了解</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="tabConDiv">
+              <h3>员工培训</h3>
+              <p>派遣服务  由派遣单位与用人单位签订合作协议，将与其签订劳动合同的劳动者派…</p>
+              <a href="#">立即了解</a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="tabConDiv">
+              <h3>薪酬发放</h3>
+              <p>派遣服务  由派遣单位与用人单位签订合作协议，将与其签订劳动合同的劳动者派…</p>
+              <a href="#">立即了解</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="tabConDiv">
+              <h3>保险缴纳</h3>
+              <p>派遣服务  由派遣单位与用人单位签订合作协议，将与其签订劳动合同的劳动者派…</p>
+              <a href="#">立即了解</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="tabConDiv">
+              <h3>档案管理</h3>
+              <p>派遣服务  由派遣单位与用人单位签订合作协议，将与其签订劳动合同的劳动者派…</p>
+              <a href="#">立即了解</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div ng-show='t==2'>
+    <div class="container">
+      <div class="tabDiv">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="tabConDiv">
+              <h3>养老保险</h3>
+              <p>派遣服务  由派遣单位与用人单位签订合作协议，将与其签订劳动合同的劳动者派…</p>
+              <a href="#">立即了解</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="tabConDiv">
+              <h3>医疗保险</h3>
+              <p>派遣服务  由派遣单位与用人单位签订合作协议，将与其签订劳动合同的劳动者派…</p>
+              <a href="#">立即了解</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="tabConDiv">
+              <h3>失业保险</h3>
+              <p>派遣服务  由派遣单位与用人单位签订合作协议，将与其签订劳动合同的劳动者派…</p>
+              <a href="#">立即了解</a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="tabConDiv">
+              <h3>生育保险</h3>
+              <p>派遣服务  由派遣单位与用人单位签订合作协议，将与其签订劳动合同的劳动者派…</p>
+              <a href="#">立即了解</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="tabConDiv">
+              <h3>工伤保险</h3>
+              <p>派遣服务  由派遣单位与用人单位签订合作协议，将与其签订劳动合同的劳动者派…</p>
+              <a href="#">立即了解</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="tabConDiv">
+              <h3>公积金服务</h3>
+              <p>派遣服务  由派遣单位与用人单位签订合作协议，将与其签订劳动合同的劳动者派…</p>
+              <a href="#">立即了解</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- section one end-->
+
+  <!-- section two -->
+  <div class="introDiv">
+    <div class="row">
+      <div class="col-md-6 col-xs-12 pdl-15">
+        <img src="../img/index/introduce.png" alt="">
+      </div>
+      <div class="col-md-6 col-xs-12 pd-t-2">
+          <h3><a href="#">企业简介</a></h3>
+          <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;山西佳鑫人力资源管理咨询服务有限公司成立于2006年,是经山西省人力资源和社会保障厅批准的专业人力资源服务机构，拥有覆盖全省的人力资源寻访及客户服务网络。公司作为人力资源管理综合服务商和人才服务解决方案提供商，竭诚为客户提供各种人力资源综合管理服务。  十年来依托人才、人事与劳动保障系统等有关部门的业务支持…</p>
+      </div>
+    </div>
+  </div>
+  <!-- section two end -->
+
+  <!-- section three -->
+  <div class="newsDiv">
+    <h1>新闻资讯</h1>
+    <div class="row">
+      <div class="col-md-4 col-xs-12 col-sm-12">
+        <div class="newsCon1">
+          <img src="../img/index/newsCon1.jpg" alt="">
+          <h5><a href="">山西佳鑫人力资源管理咨询服务有限公司</a></h5>
+          <p>山西佳鑫人力资源管理咨询服务有限公司成立于2006年，是经山西省人力资源和社会保障厅批准注册设立的专业人力</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-xs-12 col-sm-12">
+        <div class="newsCon1">
+          <img src="../img/index/newsCon2.jpg" alt="">
+          <h5><a href="Javascript:;">山西佳鑫人力资源管理咨询服务有限公司</a></h5>
+          <p>山西佳鑫人力资源管理咨询服务有限公司成立于2006年，是经山西省人力资源和社会保障厅批准注册设立的专业人力</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-xs-12 col-sm-12">
+        <div class="newsCon1">
+          <img src="../img/index/newsCon3.jpg" alt="">
+          <h5><a href="">山西佳鑫人力资源管理咨询服务有限公司</a></h5>
+          <p>山西佳鑫人力资源管理咨询服务有限公司成立于2006年，是经山西省人力资源和社会保障厅批准注册设立的专业人力</p>
+        </div>
+      </div>
+    </div>
+    <div class="row more">
+      <div class="col-md-12 col-xs-12 col-sm-12">
+        <a href="Javascript:;">MORE</a>
+      </div>
+    </div>
+  </div>
+  <!-- section three end-->
+
+  <!-- section four-->
+  <div class="contact bgc-blue">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <img src="../img/index/contact.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="introDiv">
+    <div class="row">
+      <div class="col-md-6 col-xs-12">
+        <img src="../img/index/conpic.jpg" alt="">
+      </div>
+      <div class="col-md-6 col-xs-12 pd-t-2">
+          <form>
+            <h4>登记信息  佳鑫人力专业的服务顾问会在第一时间联络您</h4>
+            <div class="row">
+              <div class="col-md-6 col-xs-12">
+                <label for="userName">姓名*</label><br/>
+                <input type="text" placeholder="请输入您的姓名" id="userName" class="form-control">
+              </div>
+              <div class="col-md-6 col-xs-12">
+                <label for="phoneNumber">电话*</label><br/>
+                <input type="tel" placeholder="请输入您的电话" id="phoneNumber" class="form-control">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-xs-12">
+                <label for="userName">邮箱*</label><br/>
+                <input type="email" placeholder="请输入您的邮箱" id="email" class="form-control">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <label for="userName">内容*</label><br/>
+                <textarea name="" id="" class="form-control formTextarea"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <input type="button" class="submit" value="提交">
+              </div>
+            </div>
+          </form>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-md-offset-7"><a href="Javascript:;">网站首页</a>/<a href="Javascript:;">关于佳鑫</a>/<a href="Javascript:;">新闻资讯</a>/<a href="Javascript:;">产品服务</a>/<a href="Javascript:;">招聘中心</a>/<a href="Javascript:;">联系我们</a></div>
+      </div>
+      <div class="row" style="padding: 2% 0;">
+        <div class="col-md-6 col-xs-12 flogo">
+          <img src="../img/index/flogo.jpg" alt="">
+        </div>
+        <div class="col-md-6 col-xs-12" style="padding-top: 1%; text-align: right;">
+          <p>地址：太原市高新开发区创业街时代广场1408</p>
+          <p>电话：0351-8066903</p>
+          <a href="Javascript:;" class="icp">
+            <img src="../img/index/ghs.png" alt="">
+            <p>晋公网安备 14010502050227号</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- section four end-->
+
+  <!-- 侧边栏 -->
+  <div class="besideDiv">
+    <a href="Javascript:;">
+      <span class="glyphicon glyphicon-user fontspan"></span>
+      <span>保险咨询</span>
+    </a>
+    <a href="Javascript:;">
+      <span class="glyphicon glyphicon-user fontspan"></span>
+      <span>档案咨询</span>
+    </a>
+    <a href="Javascript:;">
+      <span class="glyphicon glyphicon-user fontspan"></span>
+      <span>公积金咨询</span>
+    </a>
+    <a href="Javascript:;">
+      <span class="glyphicon glyphicon-user fontspan"></span>
+      <span>业务咨询</span>
+    </a>
+    <a href="Javascript:;" ng-mouseover='e=1' ng-mouseout='e=0'>
+      <span class="glyphicon glyphicon-qrcode fontspan"></span>
+      <span>扫一扫关注</span>
+    </a>
+    <a href="Javascript:;" onclick='gotoTop();return false;'>
+      <span class="glyphicon glyphicon-arrow-up fontspan"></span>
+      <span>返回顶部</span>
+    </a>
+    <div ng-show='e==1' ng-hide='e==0' class="ewm">
+      <img src="../img/index/ewm.png" alt="">
+    </div>
+  </div>
+  <!-- 侧边栏 end -->
+  <script type="text/javascript">
+  	window.onload = function(){
+  		var wid = document.documentElement.clientWidth;
+  		var newfs = wid*16/640;
+  		console.log(newfs);
+  		var html = document.getElementsByTagName('html')[0];
+  		html.style.fontSize = newfs+'px';
+  	}
+  	window.onresize = function(){
+  		var wid = document.documentElement.clientWidth;
+  		var newfs = wid*16/640;
+  		console.log(newfs);
+  		var html = document.getElementsByTagName('html')[0];
+  		html.style.fontSize = newfs+'px';
+  	}
+  </script>
+
+  <script type="text/javascript">
+    var app = angular.module('jiaxinrenli',[]);
+    app.controller('myCtrl',['$scope',function($s){
+      $s.t=1;
+      $s.e=0;
+    }])  
+  </script>
+
+  <script type="text/javascript">   
+    function gotoTop(acceleration,stime) {
+     acceleration = acceleration || 0.1;
+     stime = stime || 10;
+     var x1 = 0;
+     var y1 = 0;
+     var x2 = 0;
+     var y2 = 0;
+     var x3 = 0;
+     var y3 = 0; 
+     if (document.documentElement) {
+         x1 = document.documentElement.scrollLeft || 0;
+         y1 = document.documentElement.scrollTop || 0;
+     }
+     if (document.body) {
+         x2 = document.body.scrollLeft || 0;
+         y2 = document.body.scrollTop || 0;
+     }
+     var x3 = window.scrollX || 0;
+     var y3 = window.scrollY || 0;
+   
+     // 滚动条到页面顶部的水平距离，指横向滚动条
+     var x = Math.max(x1, Math.max(x2, x3));
+     // console.log(x);
+     // 滚动条到页面顶部的垂直距离，指纵向滚动条
+     var y = Math.max(y1, Math.max(y2, y3));
+     // console.log(y);
+     // 滚动距离 = 目前距离 / 速度, 因为距离原来越小, 速度是大于 1 的数, 所以滚动距离会越来越小
+     var speeding = 1 + acceleration;
+     window.scrollTo(Math.floor(x / speeding), Math.floor(y / speeding));
+   
+     // 如果距离不为零, 继续调用函数
+     if(x > 0 || y > 0) {
+        var run = "gotoTop(" + acceleration + ", " + stime + ")";
+        window.setTimeout(run, stime);
+      }
+    }
+  </script>
+</body>
+</html>
